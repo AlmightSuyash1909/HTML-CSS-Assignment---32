@@ -1,0 +1,317 @@
+:root{
+    --primary:rgb(16 33 105);
+    --secondary:rgb(249 35 77);
+    --textDark:rgb(11 27 53);
+    --textLight:rgb(109 108 115);
+    --bg:rgb(223 236 255);
+}
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* Own Styles */
+
+html{
+    font-size: 16px;
+}
+
+*{
+    box-sizing: border-box;
+}
+body{
+    line-height: 1.5;
+    font-size: 1rem;
+    font-family: 'Noto Sans Display', sans-serif;
+}
+a{
+    text-decoration: none;
+}
+/* Container */
+.container{
+    max-width: 1300px;
+    width:100%;
+    margin:0 auto;
+    padding:0 2rem;
+}
+
+/* flex */
+.flex{
+    display: flex;
+}
+.justify-between{
+    justify-content: space-between;
+}
+.justify-center{
+    justify-content: center;
+}
+.justify-around{
+    justify-content: space-around;
+}
+.align-center{
+    align-items: center;
+}
+.flex-10{
+    flex:0 1 10%;
+}
+.flex-15{
+    flex:0 1 15%;
+}
+.flex-20{
+    flex: 0 1 20%;
+}
+.flex-30{
+    flex: 0 1 30%;
+}
+.flex-46{
+    flex:0 1 46%;
+}
+.flex-50{
+    flex:0 1 50%;
+}
+.flex-60{
+    flex:0 1 60%;
+}
+.btn{
+    display:inline-block;
+    background-color:var(--secondary);
+    color:white;
+    padding:0.6rem 2rem;
+    border-radius: 4px;
+    font-size: 1.2rem !important;
+    text-transform: capitalize  !important;
+}
+.text-center{
+    text-align: center;
+}
+
+/* HEADER */
+.header{
+    padding:1.5rem 0;
+    position: absolute;
+    width:100%;
+}
+.header span{
+    font-size: 1.8rem;
+    font-weight: 900;
+    color:white;
+}
+.nav .nav-items{
+    margin-left: 2rem;
+}
+.nav-items a {
+    color:rgb(255, 255, 255);
+    font-weight: 500;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+}
+
+/* Hero-Section */
+.hero{
+    height: 100vh;
+    background:linear-gradient(rgba(38, 0, 128, 0.507),rgba(19, 0, 128, 0.507)), url(assets/media/banner.png) no-repeat;
+    padding-top: 8rem;
+}
+.hero h1 {
+    font-size: 2.5rem;
+    font-weight: 900;
+    color:white;
+    margin-bottom: 1.2rem;
+}
+.hero span{
+    color:var(--secondary)
+}
+.hero p {
+    font-weight: 500;
+    color:white;
+    margin-bottom: 1.2rem;
+}
+
+ /* About section */
+.about{
+    padding: 3.3rem 0;
+}
+.about h2 {
+    font-size: 2.3rem;
+    font-weight: 900;
+    color:var(--textDark);
+    margin-bottom: 1.2rem;
+    text-transform: uppercase;;
+}
+.about p {
+    font-weight: 500;
+    color:var(--textLight);
+    margin-bottom: 1.2rem;
+}
+
+/* Join Section */
+
+ .join{
+    padding: 3.3rem 0;
+    background-color: var(--bg);
+    position: relative;
+}
+.join h2 {
+    font-size: 2.3rem;
+    font-weight: 900;
+    color:var(--textDark);
+    margin-bottom: 3.8rem;
+    text-transform: capitalize;
+    text-align: center;
+}
+.border{
+    border:2px dashed red;
+    height:200px;
+    
+}
+.no-1{
+    position: absolute;
+    top:8.7rem;
+    left:4.938rem;
+    background-color: var(--bg);
+    padding:0 8px;
+    color:var(--secondary);
+    font-size: 2rem;
+    font-weight: 700;
+}
+.no-2{
+    position: absolute;
+    top:8.7rem;
+    left:32rem;
+    background-color: var(--bg);
+    padding: 0 8px;
+    color:var(--secondary);
+    font-size: 2rem;
+    font-weight: 700;
+}
+.no-3{
+    position: absolute;
+    top:8.7rem;
+    right:366px;
+    background-color: var(--bg);
+    padding:0 8px;
+    color:var(--secondary);
+    font-size: 2rem;
+    font-weight: 700;
+}
+.join .article{
+    padding:1.1rem .9rem;
+}
+.join h3 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color:var(--textDark);
+    margin-bottom: 0.4rem;
+    text-transform: capitalize;
+} 
+
+
+/* Schedule-Section */
+
+.schedule{
+    padding:4rem 0;
+}
+.schedule h2 {
+    font-size: 2.3rem;
+    font-weight: 900;
+    color:var(--textDark);
+    margin-bottom: 3.8rem;
+    text-transform: capitalize;
+    text-align: center;
+}
+.schedule span{
+    display: block;
+    width:100px;
+    font-size: 1.5rem;
+    background-color: var(--secondary);
+    padding:30px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.schedule h3 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color:var(--textDark);
+    margin-bottom: 0.4rem;
+    text-transform: capitalize;
+} 
+.schedule p {
+    font-size:1.2rem;
+}
+.schedule img {
+    border-radius: 0.5rem;
+}
+.schedule-items {
+    margin-bottom: 4rem;
+}
+
+/* Speakers Section */
+.speakers{
+    padding:3rem 0;
+    background-color: var(--bg);
+}
+.speakers .col{
+    padding:1.7rem 0;
+}
+.speakers h3{
+    font-size:1.8rem;
+    font-weight: 700;
+    margin:0.5rem 0;
+    color:var(--textDark)
+}
+.speakers h4{
+    color: var(--textDark);
+}
+.speakers .active{
+    background-color: var(--secondary);
+    border-radius: 0.3rem;
+}
+.speakers .active h3, .speakers .active h4{
+    color: white ;
+}
+

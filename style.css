@@ -149,12 +149,16 @@ a{
     font-size: 1.2rem;
     text-transform: uppercase;
 }
+#toggle,.bars {
+    display: none;
+}
 
 /* Hero-Section */
 .hero{
     height: 100vh;
-    background:linear-gradient(rgba(38, 0, 128, 0.507),rgba(19, 0, 128, 0.507)), url(assets/media/banner.png) no-repeat;
+    background:linear-gradient(rgba(16, 32, 105, 0.685),rgba(16, 32, 105, 0.699)), url(assets/media/banner.png) no-repeat;
     padding-top: 8rem;
+    background-size: cover;
 }
 .hero h1 {
     font-size: 2.5rem;
@@ -216,7 +220,7 @@ a{
     padding:0 8px;
     color:var(--secondary);
     font-size: 2rem;
-    font-weight: 700;
+    font-weight: 900;
 }
 .no-2{
     position: absolute;
@@ -226,7 +230,7 @@ a{
     padding: 0 8px;
     color:var(--secondary);
     font-size: 2rem;
-    font-weight: 700;
+    font-weight: 900;
 }
 .no-3{
     position: absolute;
@@ -236,7 +240,7 @@ a{
     padding:0 8px;
     color:var(--secondary);
     font-size: 2rem;
-    font-weight: 700;
+    font-weight: 900;
 }
 .join .article{
     padding:1.1rem .9rem;
@@ -263,15 +267,34 @@ a{
     text-transform: capitalize;
     text-align: center;
 }
-.schedule span{
-    display: block;
-    width:100px;
+.schedule-date{
+    width:8rem;
+    height:8rem;
     font-size: 1.5rem;
+    font-weight:900;
     background-color: var(--secondary);
-    padding:30px;
     border-radius: 50%;
     margin-bottom: 20px;
-    text-align: center;
+    position: relative;
+}
+.schedule-date::before{
+    content:"";
+    height:4rem;
+    border-right:2px dashed var(--secondary);
+    position:absolute;
+    left:50%;
+    top:100%;
+}
+.schedule-date-last .schedule-date::before{
+    color:blue;
+    width:20px;
+}
+.schedule-date{
+    background-color: white;
+    border:2px dashed var(--secondary)
+}
+.schedule-items .active{
+    background-color: var(--secondary) !important;
 }
 .schedule h3 {
     font-size: 1.8rem;
@@ -315,3 +338,239 @@ a{
     color: white ;
 }
 
+/* Video */
+.vdo{
+    padding:2rem 0;
+}
+.iframe-container{
+    height:0;
+    padding-bottom: 56.25%;
+    width:100%;
+    position: relative;
+}
+.vdo iframe{
+    border-radius: 10px;
+    position: absolute;
+    top:0;
+    right:0;
+    left:0;
+    bottom:0;
+    height:100%;
+    width:100%;
+}
+
+/* News SEction */
+.news{
+    padding:5rem 0;
+    background-color: var(--bg); 
+}
+.news h2 {
+    font-size: 2.3rem;
+    font-weight: 900;
+    color:var(--textDark);
+    margin-bottom: 3.8rem;
+    text-transform: capitalize;
+}
+.news h4{
+    font-size:1.4rem;
+    font-weight: 900;
+    margin:0.5rem 0;
+    color:var(--textDark)
+}
+.news p {
+    color:var(--textLight);
+}
+.news-btn{
+    text-decoration:underline;
+    color:var(--textDark);
+    display: inline-block;
+    margin-top: 1.4rem;
+    font-size: 1.4rem;
+}
+.news .active{
+    color: var(--secondary);
+}
+
+/* Footer */
+.contact{
+    padding:3rem 0;
+    background-color: var(--primary);
+}
+.contact h4 {
+    color:white;
+    font-weight: 700;
+    margin:0.5rem 0;
+    font-size:1.5rem;
+}
+.contact a {
+    color: var(--textLight);
+    margin-right: 1.2rem;
+    display: inline-block;
+    margin-top: 1rem;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+.follow a {
+    color:rgb(180, 174, 174);
+    font-size: 1.5rem;
+}
+
+/* Footer */
+.footer{
+    padding:2rem 0;
+    background-color: var(--textDark);
+}
+small{
+    color:rgb(180, 174, 174);
+    font-size: 1.2rem;
+}
+
+
+/* Media Queries */
+@media  screen and (max-width:1200px){
+    .contaienr{
+        max-width:1020px;
+    }
+}
+@media  screen and (max-width:1040px){
+    .contaienr{
+        max-width:1120px;
+    }
+    .hero{
+        height:40vh;
+    }
+}
+@media screen and (max-width:992px){
+    html{
+        font-size:14px;
+    }
+    .container{
+        max-width:960px;
+    }
+}
+@media screen and (max-width:768px){
+    html{
+        font-size:12px;
+    }
+    .container{
+        max-width:700px;
+    }
+    .sm-column{
+        flex-direction:column;
+    }
+    .sm-flex-100{
+        flex:0 1 100%;
+        margin:2rem 0;
+    }
+    .sm-wrap{
+        flex-wrap: wrap;
+    }
+    .order-1{
+        order: 1;
+    }
+    .sm-text-center{
+        text-align: center;
+    }
+    .sm-flex{
+        display:flex;
+    }
+    .sm-justify-center{
+        justify-content: center;
+    }
+    .sm-justify-between{
+        justify-content: space-between;
+    }
+    .sm-align-center{
+        align-items:center
+    }
+ 
+    /* nav-bar */
+    .header{
+        background-color: rgba(16, 32, 105, 0.842);
+        height:70px;
+        position: fixed;
+    }
+    .nav {
+        display:none;
+        position: fixed;
+        z-index:99;
+        top:0;
+        left:0;
+        right:0;
+        height:100vh;
+        background-color: rgba(16, 32, 105, 0.836);
+        padding: 10rem 0;
+    }
+    .nav-items{
+        margin-bottom:2rem;
+    }
+    #toggle:checked ~ .nav{
+        display:inline-block;
+    }
+    .bars{
+        font-size: 2rem;
+        color:white;
+        display: inline-block;
+    }
+    .brand,.bars{
+        position:fixed;
+        top:1.5rem;
+        z-index: 999;
+    }
+    .brand{
+        left:2rem;
+    }
+    .bars{
+        right:2rem;
+    }
+    /* hero */
+    .hero{
+        height: auto;
+        padding:8rem 0 4rem 0;
+    }
+    .hero img {
+        max-height:500px;
+        object-fit: cover;
+        border-top-left-radius:4rem ;
+        border-bottom-right-radius:4rem ;
+    }
+    /* Schedule */
+    .schedule-date{
+        height: 0;
+        width:0;
+        border-radius: 0;
+        border:0;
+        color:var(--secondary);
+        text-align:center;
+    }
+    .schedule-items{
+        box-shadow: 0 0 7px rgb(51, 50, 50);
+        padding:1rem 1.7rem;
+        border-radius: 0.4rem;
+    }
+    .schedule-date::before{
+        display: none;
+    }
+    .schedule img{
+        max-height:250px;
+        object-fit: cover;
+    }
+    /* news  */
+    .news img {
+        height:180px;
+        object-fit: cover;
+        border-radius:4px;
+    }
+    /* speakers */
+    .speakers .col{
+        padding: 1.2rem 1rem;
+    }
+}
+@media screen and (max-width:576px){
+    html{
+        font-size: 10px;
+    }
+    .contaienr{
+        max-width:550px;
+    }
+}

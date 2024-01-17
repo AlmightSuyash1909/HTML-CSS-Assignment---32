@@ -6,26 +6,31 @@
     <title>Respomsive Web Design Assignment - 2</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Display:wght@100;300;500;700;800;900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/6703c2f694.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header class="header">
        <div class="container flex justify-between align-center">
-        <div>
+        <a href="index.html" class="brand" >
             <span>Alt Events</span>
-        </div>
+        </a>
+        <label class="bars" for="toggle">
+            <i class="fa-solid fa-bars"></i>
+        </label>
+        <input type="checkbox" id="toggle">
         <nav class="nav">
-            <ul class="flex align-center">
+            <ul class="flex align-center sm-column">
                 <li class="nav-items">
-                    <a href="#">Home</a>
+                    <a href="index.html">Home</a>
                 </li>
                 <li class="nav-items">
-                    <a href="#">About</a>
+                    <a href="#about">About</a>
                 </li>
                 <li class="nav-items">
-                    <a href="#">Services</a>
+                    <a href="#services">Services</a>
                 </li>
                 <li class="nav-items">
-                    <a href="#">Contact</a>
+                    <a href="#contact">Contact</a>
                 </li>
                 <li class="nav-items">
                     <a class="btn" href="#">Join Us</a>
@@ -36,8 +41,8 @@
     </header>
     <main>
         <section class="hero">
-            <div class="container flex justify-between align-center">
-                <div class="flex-50">
+            <div class="container flex justify-between align-center sm-wrap">
+                <div class="flex-50 sm-flex-100 order-1">
                     <h1>Web Developer
                         <br>
                         Confrence <span>2020</span>
@@ -47,17 +52,17 @@
                     </p>
                     <a class="btn" href="#">Register Now</a>
                 </div>
-                <div class="flex-30">
+                <div class="flex-30 sm-flex-100">
                     <img src="assets/media/hero.png" alt="concert" width="100%">
                 </div>
             </div>
         </section>
-        <section class="about">
-            <div class="container flex justify-between align-center">
-                <div class="flex-46 ">
+        <section id="about" class="about">
+            <div class="container flex justify-between align-center sm-wrap">
+                <div class="flex-46 sm-flex-100">
                     <img src="assets/media/about.png" alt="about" width="100%">
                 </div>
-                <div class="flex-46 ">
+                <div class="flex-46 sm-flex-100">
                     <h2>About The Event</h2>
                     <p>
                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid cum dolor nobis maiores deleniti, quas minus ipsa harum libero porro doloribus aut.lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -69,8 +74,8 @@
         <section class="join">
             <div class="container">
                 <h2>Why You Should Join</h2>
-                <div class="article-container flex justify-between">
-                    <div class="border  flex-30">
+                <div class="article-container flex justify-between sm-wrap">
+                    <div class="border sm-flex-100 flex-30">
                         <div class="no-1">1</div>
                         <div class="article">
                             <h3>network</h3>
@@ -79,7 +84,7 @@
                             </p>
                         </div>
                     </div>
-                    <div class="border  flex-30">
+                    <div class="border  flex-30 sm-flex-100">
                         <div class="no-2">2</div>
                         <div class="article">
                             <h3>Great Speakers</h3>
@@ -88,7 +93,7 @@
                             </p>
                         </div>
                     </div>
-                    <div class="border  flex-30">
+                    <div class="border  flex-30 sm-flex-100">
                         <div class="no-3">3</div>
                         <div class="article">
                             <h3>Information</h3>
@@ -100,64 +105,72 @@
                 </div>
             </div>
         </section>
-        <section class="schedule">
+        <section id="services" class="schedule">
             <div class="container">
                 <h2>Schedule</h2>
                 <div>
-                    <div class=" schedule-items flex justify-between">
-                        <span class="flex-10">06
-                            <br>
-                            Sept
-                        </span>
-                        <div class="flex-20">
+                    <div class=" schedule-items flex  justify-between sm-wrap">
+                        <div class=" flex-15 sm-flex-100 ">
+                            <div class="schedule-date active flex justify-center align-center text-center sm-text-center">
+                                06<br>
+                                sept
+                            </div>
+                        </div>
+                        <div class="flex-15  sm-flex-100">
                             <img src="assets/media/schedule-01.jpg" alt="" width="100%">
                         </div>
-                        <div class="flex-60">
+                        <div class="flex-60 sm-flex-100">
                             <h3>Digital World Event Conversation</h3>
                             <p>
                                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam rem accusantium, deserunt, eos quidem at exercitationem perspiciatis quibusdam cumque quaerat consequatur, sit expedita. Possimus vero at non! Magni, sit at.
                             </p>
                         </div>
                     </div>
-                    <div class=" schedule-items flex justify-between">
-                        <span class="flex-10">06
-                            <br>
-                            Sept
-                        </span>
-                        <div class="flex-20">
+                    <div class=" schedule-items flex justify-between sm-wrap">
+                        <div class=" flex-15 sm-flex-100">
+                            <div class="schedule-date flex justify-center align-center text-center">
+                                07<br>
+                                sept
+                            </div>
+                        </div>
+                        <div class="flex-20 sm-flex-100">
                             <img src="assets/media/schedule-02.jpg" alt="" width="100%">
                         </div>
-                        <div class="flex-60">
+                        <div class="flex-60 sm-flex-100">
                             <h3>Web Desigining Conversation</h3>
                             <p>
                                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam rem accusantium, deserunt, eos quidem at exercitationem perspiciatis quibusdam cumque quaerat consequatur, sit expedita. Possimus vero at non! Magni, sit at.
                             </p>
                         </div>
                     </div>
-                    <div class=" schedule-items flex justify-between">
-                        <span class="flex-10">06
-                            <br>
-                            Sept
-                        </span>
-                        <div class="flex-20">
+                    <div class=" schedule-items flex justify-between sm-wrap">
+                        <div class=" flex-15 sm-flex-100">
+                            <div class="schedule-date flex justify-center align-center text-center">
+                                08<br>
+                                sept
+                            </div>
+                        </div>
+                        <div class="flex-20 sm-flex-100">
                             <img src="assets/media/schedule-03.jpg" alt="" width="100%">
                         </div>
-                        <div class="flex-60">
+                        <div class="flex-60 sm-flex-100">
                             <h3>Web Development Conversation</h3>
                             <p>
                                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam rem accusantium, deserunt, eos quidem at exercitationem perspiciatis quibusdam cumque quaerat consequatur, sit expedita. Possimus vero at non! Magni, sit at.
                             </p>
                         </div>
                     </div>
-                    <div class=" schedule-items flex justify-between">
-                        <span class="flex-10">06
-                            <br>
-                            Sept
-                        </span>
-                        <div class="flex-20">
+                    <div class=" schedule-items flex justify-between sm-wrap">
+                        <div class=" flex-15 sm-flex-100">
+                            <div class="schedule-date schedule-date-last flex justify-center align-center text-center">
+                                09<br>
+                                sept
+                            </div>
+                        </div>
+                        <div class="flex-20  sm-flex-100">
                             <img src="assets/media/schedule-04.jpg" alt="" width="100%">
                         </div>
-                        <div class="flex-60">
+                        <div class="flex-60 sm-flex-100">
                             <h3>Digital Marketing Confrence</h3>
                             <p>
                                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam rem accusantium, deserunt, eos quidem at exercitationem perspiciatis quibusdam cumque quaerat consequatur, sit expedita. Possimus vero at non! Magni, sit at.
@@ -171,29 +184,117 @@
             </div>
         </section>
         <section class="speakers">
-            <div class="container flex justify-around">
-                <div class="flex-20 text-center col">
+            <div class="container flex justify-around sm-wrap">
+                <div class="col flex-20 text-center col sm-flex-100 sm-flex sm-justify-between sm-align-center">
                     <img src="assets/media/speaker-1.png" alt="speaker">
                     <h3>20 +</h3>
                     <h4>Great Speakers</h4>
                 </div>
-                <div class="flex-20 text-center active col">
+                <div class=" col flex-20 text-center active col sm-flex-100 sm-flex sm-justify-between sm-align-center" >
                     <img src="assets/media/idea-2.png" alt="idea">
                     <h3>20 +</h3>
                     <h4>Great Speakers</h4>
                 </div>
-                <div class="flex-20 text-center col">
+                <div class=" col flex-20 text-center col sm-flex-100 sm-flex sm-justify-between sm-align-center">
                     <img src="assets/media/participants-3.png" alt="participants">
                     <h3>20 +</h3>
                     <h4>Great Speakers</h4>
-                </div>
-                <div class="flex-20 text-center col">
+                </div> 
+                <div class=" col flex-20 text-center col sm-flex-100 sm-flex sm-justify-between sm-align-center">
                     <img src="assets/media/sponsor-4.png" alt="sponsor">
                     <h3>20 +</h3>
                     <h4>Great Speakers</h4>
                 </div>
             </div>
         </section>
+        <section class="vdo">
+            <div class="container text-center">
+                <figure class="iframe-container">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/bjxTIcuzB6k?si=qEExaCexKdG-6vNj" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </figure>
+            </div>
+        </section>
+        <section class="news">
+            <div class="container">
+                <div class="text-center">
+                    <h2>Our Latest News</h2>
+                </div>
+                <div class="flex justify-between sm-wrap">
+                    <div class="flex-30 sm-flex-100">
+                        <img src="assets/media/news-01.png" alt="news-1"  width="100%">
+                        <h4>How to build a great portfolio as a beaginner developer</h4>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, in quisquam impedit quibusdam et rerum facilis voluptate corrupti commodi quae veniam .
+                        </p>
+                        <a class="news-btn" href="#">Read More</a>
+                    </div>
+                    <div class="flex-30 sm-flex-100">
+                        <img src="assets/media/news-02.png" alt="news-2"  width="100%">
+                        <h4>
+                            Four common situation while using git and how to solve them
+                        </h4>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, in quisquam impedit quibusdam et rerum facilis voluptate corrupti commodi quae veniam .
+                        </p>
+                        <a class=" active news-btn" href="#">Read More</a>
+                    </div>
+                    <div class="flex-30 sm-flex-100">
+                        <img src="assets/media/news-03.png" alt="news-3" width="100%">
+                        <h4>
+                            Basic unix command that you should know
+                        </h4>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, in quisquam impedit quibusdam et rerum facilis voluptate corrupti commodi quae veniam .
+                        </p>
+                        <a class="news-btn" href="#">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="contact" class="contact">
+            <div class="container flex justify-between align-center sm-wrap">
+                <div class="flex-30 sm-flex-100 sm-text-center">
+                    <img src="assets/media/logo.svg" alt="logo">
+                </div>
+                <div class="flex-30 sm-flex-100 sm-text-center">
+                    <h4>Quick Links</h4>
+                    <ul class="flex sm-justify-center">
+                        <li>
+                            <a href="#">Program</a>
+                        </li>
+                        <li>
+                            <a href="#">About Us</a>
+                        </li>
+                        <li>
+                            <a href="#">Contact Us</a>
+                        </li>
+                        <li>
+                            <a href="#">Services</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="flex-30 sm-flex-100 sm-text-center follow">
+                    <h4>Follow Us</h4>
+                    <ul class="flex sm-justify-center">
+                        <li>
+                            <a href="#">
+                                <i class="fa-brands fa-facebook"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa-brands fa-square-x-twitter"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
     </main>
+    <footer class="footer">
+        <div class="container text-center">
+            <small>&copy;AltCampusServicesPvt Ltd,2018-present </small>
+        </div>
+    </footer>
 </body>
 </html>

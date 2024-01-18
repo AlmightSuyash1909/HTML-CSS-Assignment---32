@@ -221,26 +221,6 @@ a{
     font-size: 2rem;
     font-weight: 900;
 }
-.no-2{
-    position: absolute;
-    top:8.7rem;
-    left:32rem;
-    background-color: var(--bg);
-    padding: 0 8px;
-    color:var(--secondary);
-    font-size: 2rem;
-    font-weight: 900;
-}
-.no-3{
-    position: absolute;
-    top:8.7rem;
-    right:366px;
-    background-color: var(--bg);
-    padding:0 8px;
-    color:var(--secondary);
-    font-size: 2rem;
-    font-weight: 900;
-}
 .join .article{
     padding:1.1rem .9rem;
 }
